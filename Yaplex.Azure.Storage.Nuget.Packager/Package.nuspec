@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Yaplex.Azure.Storage</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>Yaplex.Azure.Storage</title>
     <authors>Yaplex Inc.</authors>
     <owners>Yaplex Inc.</owners>
@@ -16,8 +16,8 @@
       Azure tables operation classess.
     </summary>
     <language>en-US</language>
-    <projectUrl>https://nuget.org/packages/Yaplex.Azure.Storage</projectUrl>
-    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <projectUrl>https://yaplex.com</projectUrl>
+    <iconUrl>https://yaplex.com/Media/Default/logos/yaplex-logo-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <copyright>&#169; 2014 Yaplex Inc.</copyright>
