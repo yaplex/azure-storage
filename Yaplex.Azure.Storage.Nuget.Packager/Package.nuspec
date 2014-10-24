@@ -35,7 +35,7 @@
         </group>
     </dependencies>
     <references></references>
-    <tags>azure, azure tables, azure storage</tags>
+    <tags>azure table storage</tags>
   </metadata>
   <files>
     <file src="lib\" target="lib" />
