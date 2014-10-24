@@ -1,0 +1,1 @@
+Easy operation with Azure tables
