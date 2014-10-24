@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Yaplex.Azure.Storage</id>
+    <version>1.0.1</version>
+    <title>Yaplex.Azure.Storage</title>
+    <authors>Yaplex Inc.</authors>
+    <owners>Yaplex Inc.</owners>
+    <description>
+      Classes for simplified access Azure Tables. Some ideas was borrowed from Dapper.Rainbow.
+    </description>
+    <releaseNotes>
+      First version of Yaplex.Azure.Storage nuget package.
+    </releaseNotes>
+    <summary>
+      Azure tables operation classess.
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://nuget.org/packages/Yaplex.Azure.Storage</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <copyright>&#169; 2014 Yaplex Inc.</copyright>
+    <dependencies>
+        <group targetFramework="net451">
+<!--
+          <dependency id="Microsoft.Data.Edm" version="5.6.2" />
+          <dependency id="Microsoft.Data.OData" version="5.6.2" />
+          <dependency id="Microsoft.Data.Services.Client" version="5.6.2" />
+          <dependency id="Microsoft.WindowsAzure.ConfigurationManager" version="1.8.0.0" />
+          <dependency id="Newtonsoft.Json" version="5.0.8" />
+          <dependency id="System.Spatial" version="5.6.2" />
+-->
+          <dependency id="WindowsAzure.Storage" version="4.3.0" />
+        </group>
+    </dependencies>
+    <references></references>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="lib\" target="lib" />
+    <file src="tools\" target="tools" />
+    <file src="content\" target="content" />
+  </files>
+</package>
