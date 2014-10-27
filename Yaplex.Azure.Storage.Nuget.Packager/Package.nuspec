@@ -2,18 +2,18 @@
 <package >
   <metadata>
     <id>Yaplex.Azure.Storage</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>Yaplex's Azure Storage Library</title>
     <authors>Yaplex Inc.</authors>
-    <owners>Yaplex Inc.</owners>
+    <owners>Yaplex Inc. (https://yaplex.com)</owners>
     <description>
-      Classes for simplified access Azure Tables. Some ideas was borrowed from Dapper.Rainbow.
+      Classes for simplified access Azure Tables. Some ideas was borrowed from Dapper.Rainbow. Source code available on Github. https://github.com/yaplex/azure-storage
     </description>
     <releaseNotes>
       First version of Yaplex.Azure.Storage nuget package.
     </releaseNotes>
     <summary>
-      Azure tables operation classess.
+      Simplified operations with Azure tables.
     </summary>
     <language>en-US</language>
     <projectUrl>https://yaplex.com</projectUrl>
