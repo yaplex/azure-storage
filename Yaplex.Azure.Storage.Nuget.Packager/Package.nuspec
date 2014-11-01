@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Yaplex.Azure.Storage</id>
-    <version>1.0.4</version>
+    <version>1.0.6</version>
     <title>Yaplex's Azure Storage Library</title>
     <authors>Yaplex Inc. (https://yaplex.com)</authors>
     <owners>Yaplex Inc.</owners>
@@ -10,7 +10,8 @@
       Classes for simplified access Azure Tables. Some ideas was borrowed from Dapper.Rainbow. Source code available on Github. https://github.com/yaplex/azure-storage
     </description>
     <releaseNotes>
-      First version of Yaplex.Azure.Storage nuget package.
+      new: All method, which return all items in partition
+      fixed: partition key comparation ignore case
     </releaseNotes>
     <summary>
       Simplified operations with Azure tables.

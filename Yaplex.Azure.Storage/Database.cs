@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Reflection.Emit;
@@ -147,9 +148,9 @@ namespace Yaplex.Azure.Storage
             }
 
 
-            public T First()
+            public T First(string partitionKey)
             {
-                return Query().First();
+                return Query().First(x =>partitionKey.Equals(x.PartitionKey, StringComparison.OrdinalIgnoreCase));
             }
 
             public void Update(T entity)
@@ -158,6 +159,11 @@ namespace Yaplex.Azure.Storage
                 var tr = _cloudTable.Execute(updateOp);
                 if (tr.HttpStatusCode != (int)HttpStatusCode.NoContent)
                     throw new AzureDeleteOperationException("Can't update entity. " + tr.HttpStatusCode);
+            }
+
+            public IEnumerable<T> All(string partition)
+            {
+                return Query().Where(x=>partition.Equals(x.PartitionKey, StringComparison.OrdinalIgnoreCase));
             }
         }
     }
