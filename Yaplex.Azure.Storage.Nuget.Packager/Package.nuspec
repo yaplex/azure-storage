@@ -10,8 +10,7 @@
       Classes for simplified access Azure Tables. Some ideas was borrowed from Dapper.Rainbow. Source code available on Github. https://github.com/yaplex/azure-storage
     </description>
     <releaseNotes>
-      new: All method, which return all items in partition
-      fixed: partition key comparation ignore case
+      new: ExecuteQuery method, Direct access to CloudTable
     </releaseNotes>
     <summary>
       Simplified operations with Azure tables.

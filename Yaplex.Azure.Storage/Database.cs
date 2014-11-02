@@ -99,6 +99,8 @@ namespace Yaplex.Azure.Storage
 
             private string _tableName;
 
+            public CloudTable CloudTable { get { return _cloudTable; } }
+
             public Table(Database<TDatabase> database, string likelyTableName)
             {
                 _database = database;
@@ -164,6 +166,11 @@ namespace Yaplex.Azure.Storage
             public IEnumerable<T> All(string partition)
             {
                 return Query().Where(x=>partition.Equals(x.PartitionKey, StringComparison.OrdinalIgnoreCase));
+            }
+
+            public IEnumerable<T> ExecuteQuery(TableQuery<T> query)
+            {
+                return _cloudTable.ExecuteQuery(query);
             }
         }
     }
